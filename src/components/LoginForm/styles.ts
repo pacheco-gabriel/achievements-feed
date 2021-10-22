@@ -28,17 +28,5 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: COLORS.WHITE,
     marginTop: 10
-  },
-  iconList: {
-    width: '100%',
-    flex: 1,
-    flexDirection: 'row',
-    paddingHorizontal:30,
-    justifyContent: 'center'
-  },
-  icon: {
-    fontSize: 40,
-    color: COLORS.WHITE,
-    marginRight: 10
   }
 });
