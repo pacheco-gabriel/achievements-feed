@@ -4,12 +4,14 @@ import { FONTS } from '../../theme';
 export const styles = StyleSheet.create({
   button: {
     height: 50,
-    width: '80%',
+    width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderRadius: 10
+    borderRadius: 10,
+    textAlign: 'center',
+    marginTop: 10
   },
   title: {
     fontSize: 16,
