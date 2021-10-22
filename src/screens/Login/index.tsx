@@ -34,7 +34,7 @@ export function Login(){
         setLogin(false);
         setCreate(true);
         break;
-      case 'fisrt':
+      case 'first':
         setFirstPage(true);
         setLogin(false);
         setCreate(false);
@@ -99,5 +99,7 @@ export function Login(){
       </ImageBackground>
     </MotiView>
   );
+
+  return (<View style={styles.container}><Text style={styles.text}>Carregando...</Text></View>);
   
 }

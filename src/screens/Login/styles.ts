@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -19,5 +20,8 @@ export const styles = StyleSheet.create({
     height: '100%',
     flex: 1,
     top: 20 
+  },
+  text: {
+    color: COLORS.WHITE
   }
 });
