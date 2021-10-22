@@ -14,7 +14,7 @@ import { styles } from './styles';
 import { FontAwesome5 } from '@expo/vector-icons';
 
 
-export function LoginPage(){
+export function LoginForm(){
 
   return (
       <ImageBackground 

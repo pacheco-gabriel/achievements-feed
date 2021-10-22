@@ -8,7 +8,7 @@ import {
   View
 } from 'react-native';
 import { Button } from '../../components/Button';
-import { LoginPage } from '../../components/LoginPage';
+import { LoginForm } from '../../components/LoginForm';
 import { HeaderLogin } from '../../components/HeaderLogin';
 import { COLORS } from '../../theme';
 
@@ -50,7 +50,7 @@ export function Login(){
     >
       <HeaderLogin />
       <BackButton onPress={() => setPage('first')} />
-      <LoginPage />
+      <LoginForm />
     </MotiView>
   );
 
