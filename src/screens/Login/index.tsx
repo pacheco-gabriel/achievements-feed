@@ -14,6 +14,7 @@ import { COLORS } from '../../theme';
 
 import { styles } from './styles';
 import { BackButton } from '../../components/BackButton';
+import { CreateForm } from '../../components/CreateForm';
 
 export function Login(){
   const [create, setCreate]       = useState(false);
@@ -63,7 +64,7 @@ export function Login(){
     >
       <HeaderLogin />
       <BackButton onPress={() => setPage('first')} />
-      <Text>Create</Text>
+      <CreateForm />
     </MotiView>
   );
 
