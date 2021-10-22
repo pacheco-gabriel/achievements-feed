@@ -13,14 +13,13 @@ import { HeaderLogin } from '../../components/HeaderLogin';
 import { COLORS } from '../../theme';
 
 import { styles } from './styles';
+import { BackButton } from '../../components/BackButton';
 
 export function Login(){
   const [create, setCreate]       = useState(false);
   const [login, setLogin]         = useState(false);
   const [firstPage, setFirstPage] = useState(true);
 
-  console.log(create);
-  console.log(login);
 
   function setPage(page: string){
     switch (page) {
@@ -34,7 +33,7 @@ export function Login(){
         setLogin(false);
         setCreate(true);
         break;
-      default:
+      case 'fisrt':
         setFirstPage(true);
         setLogin(false);
         setCreate(false);
@@ -43,21 +42,32 @@ export function Login(){
   }
 
   if(login) return (
-    <View style={styles.container}>
+    <MotiView 
+    from={{ opacity: 0, translateY: -50 }}
+    animate={{ opacity: 1, translateY: 0}}
+    transition={{type: 'timing', duration: 700}}
+    style={styles.container}
+    >
       <HeaderLogin />
+      <BackButton onPress={() => setPage('first')} />
       <LoginPage />
-    </View>
+    </MotiView>
   );
 
-  console.log(create)
   if(create) return (
-    <View style={styles.container}>
+    <MotiView 
+    from={{ opacity: 0, translateY: -50 }}
+    animate={{ opacity: 1, translateY: 0}}
+    transition={{type: 'timing', duration: 700}}
+    style={styles.container}
+    >
       <HeaderLogin />
+      <BackButton onPress={() => setPage('first')} />
       <Text>Create</Text>
-    </View>
+    </MotiView>
   );
 
-  return (
+  if(firstPage) return (
     <MotiView 
     from={{ opacity: 0, translateY: -50 }}
     animate={{ opacity: 1, translateY: 0}}
@@ -88,4 +98,5 @@ export function Login(){
       </ImageBackground>
     </MotiView>
   );
+  
 }

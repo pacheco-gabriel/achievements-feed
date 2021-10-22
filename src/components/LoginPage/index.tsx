@@ -12,7 +12,6 @@ import { Button } from '../Button';
 import { styles } from './styles';
 
 import { FontAwesome5 } from '@expo/vector-icons';
-import { BackButton } from '../BackButton';
 
 
 export function LoginPage(){
@@ -23,7 +22,6 @@ export function LoginPage(){
         resizeMode="cover" 
         style={styles.image}>
         <View style={styles.container}>
-          <BackButton />
           <TextInput
             keyboardAppearance="dark"
             placeholder="usuário"
