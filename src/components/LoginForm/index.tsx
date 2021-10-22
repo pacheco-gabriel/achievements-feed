@@ -11,7 +11,7 @@ import { Button } from '../Button';
 
 import { styles } from './styles';
 
-import { FontAwesome5 } from '@expo/vector-icons';
+import { PlatformList } from '../PlatformList';
 
 
 export function LoginForm(){
@@ -41,11 +41,7 @@ export function LoginForm(){
             backgroundColor={COLORS.TRANSPARENT}
           />
           <Text style={styles.text}>ou</Text>
-          <View style={styles.iconList}>
-            <FontAwesome5 name="playstation" style={styles.icon} />
-            <FontAwesome5 name="xbox" style={styles.icon} />
-            <FontAwesome5 name="steam" style={styles.icon} />
-          </View>
+          <PlatformList />
         </View>
       </ImageBackground>
   );
