@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
-import { getStatusBarHeight } from 'react-native-iphone-x-helper';
-
 import {
   useFonts,
   Roboto_700Bold,
