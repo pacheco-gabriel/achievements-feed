@@ -9,7 +9,7 @@ import {
   Roboto_400Regular
 } from '@expo-google-fonts/roboto';
 
-import { Home } from './src/screens/Home';
+import { Login } from './src/screens/Login';
 
 import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
@@ -30,7 +30,7 @@ export default function App() {
         translucent 
         backgroundColor="transparent" 
       />
-      <Home />
+      <Login />
     </View>
   );
 }
