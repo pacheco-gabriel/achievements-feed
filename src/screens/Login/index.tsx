@@ -68,7 +68,7 @@ export function Login(){
     </MotiView>
   );
 
-  if(firstPage) return (
+  return (
     <MotiView 
     from={{ opacity: 0, translateY: -50 }}
     animate={{ opacity: 1, translateY: 0}}
@@ -98,8 +98,6 @@ export function Login(){
         </View>
       </ImageBackground>
     </MotiView>
-  );
-
-  return (<View style={styles.container}><Text style={styles.text}>Carregando...</Text></View>);
+  )
   
 }

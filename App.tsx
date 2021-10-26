@@ -13,6 +13,7 @@ import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
 
 import { styles } from './styles';
+import { Home } from './src/screens/Home';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -28,7 +29,7 @@ export default function App() {
         translucent 
         backgroundColor="transparent" 
       />
-      <Login />
+      <Home />
     </View>
   );
 }
