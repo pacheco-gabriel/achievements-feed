@@ -16,4 +16,9 @@ export const COLORS = {
   GRAY_QUATERNARY: '#29292E',
 
   TRANSPARENT: 'transparent',
+
+  PLAYSTATION: "#004094",
+  STEAM: "#343132",
+  XBOX: "#0f760f"
+
 }
