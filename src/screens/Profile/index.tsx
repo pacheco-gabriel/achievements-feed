@@ -10,9 +10,8 @@ import { styles } from './styles';
 
 export function Profile(){
   return (
-    <View>
+    <View style={styles.container}>
       <Header />
-      <NavBar />
     </View>
   );
 }

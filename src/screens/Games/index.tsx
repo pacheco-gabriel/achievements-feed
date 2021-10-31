@@ -10,9 +10,8 @@ import { styles } from './styles';
 
 export function Games(){
   return (
-    <View>
+    <View style={styles.container}>
       <Header />
-      <NavBar />
     </View>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  Text,
   View
 } from 'react-native';
 import { NavBar } from '../../components/NavBar';
@@ -10,9 +11,8 @@ import { styles } from './styles';
 
 export function Favorites(){
   return (
-    <View>
+    <View style={styles.container}>
       <Header />
-      <NavBar />
     </View>
   );
 }

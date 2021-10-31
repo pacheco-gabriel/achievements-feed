@@ -12,8 +12,9 @@ import { Login } from './src/screens/Login';
 import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
 
-import { styles } from './styles';
-import { Home } from './src/screens/Home';
+import { styles }               from './styles';
+import { NavigationContainer }  from '@react-navigation/native';
+import { NavBar }               from './src/components/NavBar';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,16 +22,21 @@ export default function App() {
     Roboto_400Regular
   });
 
+
   if(!fontsLoaded) return <AppLoading />;
+
   return (
-    <View style={styles.container}>
-      <StatusBar 
-        style="light" 
-        translucent 
-        backgroundColor="transparent" 
-      />
-      <Home />
-    </View>
+
+    <NavigationContainer>
+      <View style={styles.container}>
+        <StatusBar 
+          style="light" 
+          translucent 
+          backgroundColor="transparent" 
+        />
+        <NavBar />
+      </View>
+    </NavigationContainer>
   );
 }
 
