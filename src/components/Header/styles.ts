@@ -10,16 +10,20 @@ export const styles = StyleSheet.create({
   },
   boxImageBackground: {
     borderWidth: 1,
-    borderBottomColor: COLORS.PINK,
+    borderColor: COLORS.PINK,
+    top: -20,
+    /*borderBottomColor: COLORS.PINK,
     borderLeftColor: COLORS.PINK,
     borderRightColor: COLORS.PINK,
     borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,
+    borderBottomRightRadius: 20,*/
+    borderRadius: 20,
     overflow: "hidden",
   },
   imageBackground: {
     width: "100%",
-    height: 160
+    borderRadius: 20,
+    height: 180
   },
   imageUser: {
     width: 100,
