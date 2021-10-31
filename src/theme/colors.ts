@@ -19,6 +19,7 @@ export const COLORS = {
 
   PLAYSTATION: "#004094",
   STEAM: "#343132",
-  XBOX: "#0f760f"
+  XBOX: "#0f760f",
+  DISABLE: "#888787"
 
 }
