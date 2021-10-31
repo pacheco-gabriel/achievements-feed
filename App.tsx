@@ -15,6 +15,7 @@ import { StatusBar } from 'expo-status-bar';
 import { styles }               from './styles';
 import { NavigationContainer }  from '@react-navigation/native';
 import { NavBar }               from './src/components/NavBar';
+import { Home } from './src/screens/Home';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -34,7 +35,7 @@ export default function App() {
           translucent 
           backgroundColor="transparent" 
         />
-        <Login />
+        <NavBar />
       </View>
     </NavigationContainer>
   );
