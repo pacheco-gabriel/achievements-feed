@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavigationStackProp } from 'react-navigation-stack';
 
 import {
   ImageBackground,
@@ -12,25 +13,25 @@ import { Button } from '../../Button';
 import { styles } from './styles';
 
 import { PlatformList } from '../PlatformList';
-import { MotiView } from '@motify/components';
 import { HeaderLogin } from '../HeaderLogin';
+import { BackButton } from '../BackButton';
+
+type Props = {
+ navigation: NavigationStackProp<any,any>
+}
 
 
-export function CreateForm(){
+export function CreateForm({ navigation }: Props){
 
   return (
-    <MotiView 
-    from={{ opacity: 0, translateY: -50 }}
-    animate={{ opacity: 1, translateY: 0}}
-    transition={{type: 'timing', duration: 700}}
-    style={styles.container}
-    >
+    <View style={styles.container}>
       <HeaderLogin />
       <ImageBackground 
         source={require('../../../assets/bg-form-login.png')} 
         resizeMode="cover" 
         style={styles.image}>
         <View style={styles.containerForm}>
+          <BackButton onPress={() => navigation.goBack() } />
           <TextInput
             keyboardAppearance="dark"
             placeholder="usuário"
@@ -60,11 +61,12 @@ export function CreateForm(){
             color={COLORS.WHITE}
             borderColor={COLORS.WHITE}
             backgroundColor={COLORS.TRANSPARENT}
+            onPress={() => navigation.navigate('Home') }
           />
           <Text style={styles.text}>ou</Text>
           <PlatformList />
         </View>
       </ImageBackground>
-    </MotiView>
+    </View>
   );
 }

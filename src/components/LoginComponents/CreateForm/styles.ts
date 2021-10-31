@@ -3,7 +3,8 @@ import { COLORS } from '../../../theme';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: COLORS.BLACK_SECONDARY
   },
   containerForm: {
     width: '100%',
