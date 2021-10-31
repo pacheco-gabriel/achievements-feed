@@ -1,12 +1,15 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '../../theme';
+import { COLORS } from '../../../theme';
 
 export const styles = StyleSheet.create({
   container: {
+    flex: 1
+  },
+  containerForm: {
     width: '100%',
     flex: 1,
     flexDirection: 'column',
-    paddingTop: 40,
+    paddingTop: 70,
     alignItems: 'center',
     paddingHorizontal:30
   },
@@ -17,8 +20,8 @@ export const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 600,
-    flex: 3,
-    top: 0 
+    flex: 2,
+    top: 20 
   },
   input: {
     width: '100%',

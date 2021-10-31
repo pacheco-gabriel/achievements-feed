@@ -1,103 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { MotiView } from 'moti';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {
-  ImageBackground,
-  Text,
-  View
-} from 'react-native';
-import { Button } from '../../components/Button';
-import { LoginForm } from '../../components/LoginForm';
-import { HeaderLogin } from '../../components/HeaderLogin';
-import { COLORS } from '../../theme';
+import { LoginForm } from '../../components/LoginComponents/LoginForm';
 
 import { styles } from './styles';
-import { BackButton } from '../../components/BackButton';
-import { CreateForm } from '../../components/CreateForm';
+import { BackButton } from '../../components/LoginComponents/BackButton';
+import { CreateForm } from '../../components/LoginComponents/CreateForm';
+import { FirstPage } from '../../components/LoginComponents/FirstPage';
+import { NavigationContainer } from '@react-navigation/native';
+
+const Stack = createNativeStackNavigator();
+
+const LoginStack = () => {  return (    
+<NavigationContainer>      
+  <Stack.Navigator>  
+    <Stack.Screen name="FirstPage" component={FirstPage} />        
+    <Stack.Screen name="CreateForm" component={CreateForm} />    
+    <Stack.Screen name="LoginForm"  component={LoginForm} />       
+    </Stack.Navigator>    
+    </NavigationContainer>  
+  );
+};
 
 export function Login(){
-  const [create, setCreate]       = useState(false);
-  const [login, setLogin]         = useState(false);
-  const [firstPage, setFirstPage] = useState(true);
-
-
-  function setPage(page: string){
-    switch (page) {
-      case 'login':
-        setFirstPage(false);
-        setLogin(true);
-        setCreate(false);
-        break;
-      case 'create':
-        setFirstPage(false);
-        setLogin(false);
-        setCreate(true);
-        break;
-      case 'first':
-        setFirstPage(true);
-        setLogin(false);
-        setCreate(false);
-        break;
-    }
-  }
-
-  if(login) return (
-    <MotiView 
-    from={{ opacity: 0, translateY: -50 }}
-    animate={{ opacity: 1, translateY: 0}}
-    transition={{type: 'timing', duration: 700}}
-    style={styles.container}
-    >
-      <HeaderLogin />
-      <BackButton onPress={() => setPage('first')} />
-      <LoginForm />
-    </MotiView>
-  );
-
-  if(create) return (
-    <MotiView 
-    from={{ opacity: 0, translateY: -50 }}
-    animate={{ opacity: 1, translateY: 0}}
-    transition={{type: 'timing', duration: 700}}
-    style={styles.container}
-    >
-      <HeaderLogin />
-      <BackButton onPress={() => setPage('first')} />
-      <CreateForm />
-    </MotiView>
-  );
-
   return (
-    <MotiView 
-    from={{ opacity: 0, translateY: -50 }}
-    animate={{ opacity: 1, translateY: 0}}
-    transition={{type: 'timing', duration: 700}}
-    style={styles.container}
-    >
-      <HeaderLogin />
-      
-      <ImageBackground 
-        source={require('../../assets/bg-form-first.png')} 
-        resizeMode="cover" 
-        style={styles.image}>
-        <View style={styles.containerFirsPage}>
-          <Button
-          title="entrar"
-          color={COLORS.WHITE}
-          backgroundColor={COLORS.PINK}
-          onPress={() => setPage('login')}
-          />
-          <Button
-          title="cadastrar"
-          color={COLORS.WHITE}
-          borderColor={COLORS.WHITE}
-          backgroundColor={COLORS.TRANSPARENT}
-          onPress={() => setPage('create')}
-          />
-        </View>
-      </ImageBackground>
-    </MotiView>
+    <FirstPage />
   )
   
 }

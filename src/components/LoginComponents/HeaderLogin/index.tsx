@@ -12,12 +12,12 @@ export function HeaderLogin(){
   return (
     <>
       <ImageBackground 
-          source={require('../../assets/bg-logo.png')} 
+          source={require('../../../assets/bg-logo.png')} 
           resizeMode="cover" 
           style={styles.image}>
         <View style={styles.container}>
           <Image 
-            source={require('../../assets/logo.png')} />
+            source={require('../../../assets/logo.png')} />
         </View>
       </ImageBackground>
     </>

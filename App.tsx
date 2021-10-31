@@ -34,7 +34,7 @@ export default function App() {
           translucent 
           backgroundColor="transparent" 
         />
-        <NavBar />
+        <Login />
       </View>
     </NavigationContainer>
   );
