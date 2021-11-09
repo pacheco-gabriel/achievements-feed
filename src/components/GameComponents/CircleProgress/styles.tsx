@@ -4,7 +4,7 @@ import { COLORS } from '../../../theme';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height: 110,
+    height: 130,
     flexDirection: 'column',
     marginTop: 20
   },
@@ -13,9 +13,9 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 3,
-    borderRadius: 110,
-    height: 110,
-    width: 110,
+    borderRadius: 130,
+    height: 130,
+    width: 130,
     borderColor: COLORS.PINK
   },
   circleProgress: {
@@ -24,13 +24,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 3,
-    borderRadius: 100,
-    height: 100,
-    width: 100,
-    borderColor: '#888787'
+    borderRadius: 120,
+    height: 120,
+    width: 120,
+    borderColor: COLORS.DISABLE
   },
   textProgress: {
     color: COLORS.WHITE,
-    fontSize:20
+    fontSize:30
   }
 });

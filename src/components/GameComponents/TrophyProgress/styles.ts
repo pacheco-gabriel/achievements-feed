@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     fontSize: 14
   },
   progress:{
-    backgroundColor: '#888787',
+    backgroundColor: COLORS.DISABLE,
     width: '100%',
     borderRadius: 10,
     height: 10

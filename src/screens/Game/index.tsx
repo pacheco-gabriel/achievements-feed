@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {View} from 'react-native';
+import {Text, View} from 'react-native';
 
 import { styles } from './styles';
 
@@ -13,9 +13,14 @@ export function Game(){
     <View style={styles.container}>
       <Header />
       <View style={styles.screen}>
-        <TrophyProgress />
-        <CircleProgress />
-      </View>
+        <View style={styles.containerTrophy}>
+          <TrophyProgress />
+          <Text style={styles.title}>Existem 6 conquistas ocultas restantes</Text>
+          <Text style={styles.subTitle}>Os detalhes de cada conquista serão revelados após alcançadas</Text>
+        </View>
+        
+          <CircleProgress />
+        </View>
       
     </View>
   );
