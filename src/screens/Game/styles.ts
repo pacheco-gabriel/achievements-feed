@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '../../theme';
+import { COLORS, FONTS } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -10,6 +10,18 @@ export const styles = StyleSheet.create({
   screen: {
     paddingHorizontal: 30,
     flex: 2,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  containerTrophy: {
+    flex: 2,
+    height: 200
+  },
+  title: {
+    color: COLORS.WHITE,
+    fontFamily: FONTS.BOLD
+  },
+  subTitle: {
+    color: COLORS.DISABLE
   }
 });
