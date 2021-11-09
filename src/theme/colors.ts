@@ -18,7 +18,7 @@ export const COLORS = {
   TRANSPARENT: 'transparent',
 
   PLAYSTATION: "#004094",
-  STEAM: "#343132",
+  STEAM: "#111111",
   XBOX: "#0f760f",
   DISABLE: "#888787"
 

@@ -1,16 +1,16 @@
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginTop: 50
+    flexDirection: 'column',
+    paddingHorizontal: 30,
+    marginTop: 60
   },
-  image: {
-    width: '100%',
-    height: 200,
-    flex: 1,
-    top: 0 
+  title: {
+    color: COLORS.GRAY_TERTIARY,
+    fontSize: 16,
+    marginBottom: 10
   }
 });
