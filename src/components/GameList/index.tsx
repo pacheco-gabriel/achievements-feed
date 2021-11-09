@@ -16,15 +16,15 @@ export function GameList({title = ''}: Props){
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <ScrollView>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
-        <Game/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot" />
+        <Game title="Dragon Ball Z: Kakarot"/>
       </ScrollView>
     </View>
   );

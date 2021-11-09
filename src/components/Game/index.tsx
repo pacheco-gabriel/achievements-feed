@@ -11,7 +11,12 @@ import { PlatformLabel } from '../../components/PlatformLabel';
 import { TrophyLabel } from '../../components/TrophyLabel';
 import { GameTitle } from '../../components/GameTitle';
 
-export function Game(){
+type Props = {
+  title: string;
+  button?: boolean;
+}
+
+export function Game({title, button = true} : Props){
   return (
     <>
 
@@ -29,7 +34,7 @@ export function Game(){
 
         </ImageBackground>
       </View>
-      <GameTitle title="Dragon Ball Z: Kakarot"/>
+      <GameTitle title={title} button={button}/>
     </View>
 
     </>
