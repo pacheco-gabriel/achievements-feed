@@ -16,21 +16,22 @@ type Props = TouchableOpacityProps & {
   backgroundColor: ColorValue;
   borderColor?: ColorValue;
   isLoading?: boolean;
+  customStyles?: object;
 }
 
-export function Button({ title, color, backgroundColor, isLoading = false, borderColor = 'transparent', ...rest }: Props){
+export function Button({ title, color, backgroundColor, isLoading = false, borderColor = 'transparent', customStyles = {}, ...rest }: Props){
   return (
     <TouchableOpacity
-    style={[styles.button, { backgroundColor, borderColor }]}
+    style={[styles.button, { backgroundColor, borderColor }, customStyles]}
     activeOpacity={0.7}
     disabled={isLoading}
     {...rest}
-    > 
+    >
       {
         isLoading ?
         <ActivityIndicator color={color} /> :
         <>
-          <Text style={[styles.title, { color }]}>
+          <Text style={[typeof customStyles.title !== undefined ? customStyles.title : styles.title, { color }]}>
             { title }
           </Text>
         </>

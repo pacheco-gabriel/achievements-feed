@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { NavBar } from '../../components/NavBar';
 import { Header } from '../../components/Header';
-import { Game } from '../../components/Game';
+import { GameList } from '../../components/GameList';
 
 import { styles } from './styles';
 
@@ -14,7 +14,7 @@ export function Home(){
   return (
     <View style={styles.container}>
       <Header />
-      <Game />
+      <GameList title="Jogos recentes" />
     </View>
   );
 }

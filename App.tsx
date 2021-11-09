@@ -30,14 +30,13 @@ export default function App() {
 
     <NavigationContainer>
       <View style={styles.container}>
-        <StatusBar 
-          style="light" 
-          translucent 
-          backgroundColor="transparent" 
+        <StatusBar
+          style="light"
+          translucent
+          backgroundColor="transparent"
         />
         <NavBar />
       </View>
     </NavigationContainer>
   );
 }
-

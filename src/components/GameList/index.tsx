@@ -1,25 +1,31 @@
 import React from 'react';
 
 import {
-  Image,
-  ImageBackground,
-  View
+  View,
+  ScrollView,
+  Text
 } from 'react-native';
-
+import { Game } from '../../components/Game';
 import { styles } from './styles';
+type Props = {
+  title?: string;
+};
 
-export function HeaderLogin(){
+export function GameList({title = ''}: Props){
   return (
-    <>
-      <ImageBackground 
-          source={require('../../assets/bg-logo.png')} 
-          resizeMode="cover" 
-          style={styles.image}>
-        <View style={styles.container}>
-          <Image 
-            source={require('../../assets/logo.png')} />
-        </View>
-      </ImageBackground>
-    </>
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
+      <ScrollView>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+        <Game/>
+      </ScrollView>
+    </View>
   );
 }

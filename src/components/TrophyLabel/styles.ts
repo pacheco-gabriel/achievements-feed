@@ -2,15 +2,15 @@ import { StyleSheet } from 'react-native';
 import { COLORS } from '../../theme';
 
 export const styles = StyleSheet.create({
-  boxLabel: {
-    borderRadius: 5,
-    maxHeight: 16,
-    flex: 2,
-    textAlign: 'center',
-    marginHorizontal: 10,
-    maxWidth: 70
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: 'flex-end',
+    alignItems: "center",
+    maxHeight: 18,
+    marginHorizontal: 20
   },
-  text: {
+  textTrophy: {
     color: COLORS.WHITE,
     fontSize: 11
   }
