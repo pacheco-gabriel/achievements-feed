@@ -4,7 +4,7 @@ import {
   View,Text,
 } from 'react-native';
 import { styles } from './styles';
-import { COLORS } from '../../theme';
+import { COLORS } from '../../../theme';
 type Props = {
   platform: string;
 }

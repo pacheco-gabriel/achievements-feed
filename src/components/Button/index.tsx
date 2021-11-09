@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react';
 
 import {
@@ -16,7 +18,9 @@ type Props = TouchableOpacityProps & {
   backgroundColor: ColorValue;
   borderColor?: ColorValue;
   isLoading?: boolean;
-  customStyles?: object;
+  customStyles?: {
+    title?: {};
+  };
 }
 
 export function Button({ title, color, backgroundColor, isLoading = false, borderColor = 'transparent', customStyles = {}, ...rest }: Props){

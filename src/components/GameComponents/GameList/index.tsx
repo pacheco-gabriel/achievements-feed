@@ -5,7 +5,7 @@ import {
   ScrollView,
   Text
 } from 'react-native';
-import { Game } from '../../components/Game';
+import { Game } from '../Game';
 import { styles } from './styles';
 
 type Props = {

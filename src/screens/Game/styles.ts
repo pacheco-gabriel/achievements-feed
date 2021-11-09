@@ -9,12 +9,14 @@ export const styles = StyleSheet.create({
     paddingTop: 0,
     justifyContent: 'center'
   },
+  scrollView: {
+    marginTop: 170
+  },
   headerGame: {
     flex: 1,
     flexDirection: 'column',
     paddingHorizontal: 30,
-    height: 350,
-    paddingTop: 60
+    height: 210
   },
   screen: {
     paddingHorizontal: 30,

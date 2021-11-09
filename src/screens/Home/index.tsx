@@ -4,9 +4,8 @@ import {
   Text,
   View
 } from 'react-native';
-import { NavBar } from '../../components/NavBar';
 import { Header } from '../../components/Header';
-import { GameList } from '../../components/GameList';
+import { GameList } from '../../components/GameComponents/GameList';
 
 import { styles } from './styles';
 

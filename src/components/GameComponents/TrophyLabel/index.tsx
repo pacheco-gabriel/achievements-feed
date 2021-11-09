@@ -7,7 +7,7 @@ import { styles } from './styles';
 import { FontAwesome5 } from '@expo/vector-icons';
 
 type Props = {
-  quantity: integer;
+  quantity: number;
 }
 
 export function TrophyLabel({ quantity }: Props){
