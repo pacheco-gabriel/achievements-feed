@@ -4,8 +4,7 @@ import { COLORS } from '../../../theme';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-    paddingTop: 60
+    flexDirection: 'row'
   },
   iconTrophy:{
     color: COLORS.WHITE,

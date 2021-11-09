@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import { Game } from '../../components/Game';
 import { styles } from './styles';
+
 type Props = {
   title?: string;
 };
