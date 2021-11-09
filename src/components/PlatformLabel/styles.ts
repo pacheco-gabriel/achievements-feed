@@ -7,6 +7,8 @@ export const styles = StyleSheet.create({
     maxHeight: 16,
     flex: 2,
     textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
     marginHorizontal: 10,
     maxWidth: 70
   },
