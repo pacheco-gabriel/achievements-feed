@@ -5,6 +5,9 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.BLACK_SECONDARY,
-    paddingTop: 0,
+    paddingTop: 0
+  },
+  screen: {
+    paddingHorizontal: 20
   }
 });
