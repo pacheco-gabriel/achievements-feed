@@ -8,6 +8,8 @@ export const styles = StyleSheet.create({
     paddingTop: 0
   },
   screen: {
-    paddingHorizontal: 20
+    paddingHorizontal: 30,
+    flex: 2,
+    flexDirection: 'row'
   }
 });

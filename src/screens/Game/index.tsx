@@ -6,12 +6,17 @@ import { styles } from './styles';
 
 import { Header }         from '../../components/Header';
 import { TrophyProgress } from '../../components/GameComponents/TrophyProgress';
+import { CircleProgress } from '../../components/GameComponents/CircleProgress';
 
 export function Game(){
   return (
     <View style={styles.container}>
       <Header />
-      <TrophyProgress />
+      <View style={styles.screen}>
+        <TrophyProgress />
+        <CircleProgress />
+      </View>
+      
     </View>
   );
 }
