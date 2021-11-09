@@ -1,17 +1,22 @@
 import React from 'react';
 
-import {
-  View
-} from 'react-native';
-import { NavBar } from '../../components/NavBar';
-import { Header } from '../../components/Header';
+import {View} from 'react-native';
 
 import { styles } from './styles';
+
+import { Header }         from '../../components/Header';
+import { TrophyProgress } from '../../components/GameComponents/TrophyProgress';
+import { CircleProgress } from '../../components/GameComponents/CircleProgress';
 
 export function Game(){
   return (
     <View style={styles.container}>
       <Header />
+      <View style={styles.screen}>
+        <TrophyProgress />
+        <CircleProgress />
+      </View>
+      
     </View>
   );
 }
