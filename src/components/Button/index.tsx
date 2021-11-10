@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React from 'react';
 
 import {
@@ -19,11 +17,16 @@ type Props = TouchableOpacityProps & {
   borderColor?: ColorValue;
   isLoading?: boolean;
   customStyles?: {
-    title?: {};
+    maxWidth?: string;
+    paddingHorizontal?: number;
+    paddingVertical?: number;
+    borderRadius?: number;
+    height?: number;
+    marginTop?: number;
   };
 }
 
-export function Button({ title, color, backgroundColor, isLoading = false, borderColor = 'transparent', customStyles = {}, ...rest }: Props){
+export function Button({ title, color, backgroundColor, isLoading = false, borderColor = 'transparent', customStyles, ...rest }: Props){
   return (
     <TouchableOpacity
     style={[styles.button, { backgroundColor, borderColor }, customStyles]}
@@ -35,7 +38,7 @@ export function Button({ title, color, backgroundColor, isLoading = false, borde
         isLoading ?
         <ActivityIndicator color={color} /> :
         <>
-          <Text style={[typeof customStyles.title !== undefined ? customStyles.title : styles.title, { color }]}>
+          <Text style={[styles.title, { color }]}>
             { title }
           </Text>
         </>

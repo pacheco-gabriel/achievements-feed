@@ -1,4 +1,3 @@
-// @ts-nocheck
 
 import React from 'react';
 
@@ -18,15 +17,31 @@ import { COLORS } from '../../../theme';
 
 import { Game } from '../../../screens/Game';
 
+type PropsButton = {
+  screenName: any
+}
+
+function GoToGame({ screenName }:PropsButton) {
+  const navigation = useNavigation();
+
+  return (
+    <Button 
+      title="VER GAME"
+      color={COLORS.WHITE} 
+      onPress={() => {  navigation.navigate(screenName); }} 
+      backgroundColor={COLORS.PINK} 
+      customStyles={styles.mainButton}/>
+  );
+}
+
 export function GameTitle({title, button = true}: Props){
   
-  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.gameTitle}>{title}</Text>
       {
         button &&
-        <Button title="VER GAME" color={COLORS.WHITE} onPress={() => {  navigation.navigate(Game); }} backgroundColor={COLORS.PINK} customStyles={styles.mainButton}/>
+        <GoToGame screenName="Game" />
       }
     </View>
   );

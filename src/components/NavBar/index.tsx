@@ -76,7 +76,8 @@ function NavBarCustom({ state, descriptors, navigation }: Props) {
         if(label == 'Game') return (<></>);
         
         return (
-          <TouchableOpacity key={index}
+          <TouchableOpacity 
+            key={index}
             accessibilityRole="button"
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarTestID}
