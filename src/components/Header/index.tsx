@@ -11,7 +11,14 @@ import { FontAwesome5 } from '@expo/vector-icons';
 
 import { styles } from './styles';
 
-export function Header(){
+type Props = {
+  layout: any; 
+  options: any; 
+  route: any;
+  navigation: any; 
+}
+
+export function Header({layout,options,route,navigation}:Props){
   return (
     <>
       <View style={styles.container}>

@@ -5,18 +5,16 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
-    maxHeight: 160,
-    position: "relative"
+    maxHeight: 180,
+    minHeight: 180,
+    position: "relative",
+    backgroundColor: COLORS.BLACK_SECONDARY,
+    marginBottom: 170
   },
   boxImageBackground: {
     borderWidth: 1,
     borderColor: COLORS.PINK,
     top: -20,
-    /*borderBottomColor: COLORS.PINK,
-    borderLeftColor: COLORS.PINK,
-    borderRightColor: COLORS.PINK,
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,*/
     borderRadius: 20,
     overflow: "hidden",
   },

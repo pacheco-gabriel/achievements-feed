@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   scrollView: {
-    marginTop: 170
+    marginTop: 50
   },
   headerGame: {
     flex: 1,

@@ -16,6 +16,8 @@ import { Game } from '../../screens/Game';
 import { Favorites } from '../../screens/Favorites';
 import { Profile } from '../../screens/Profile';
 
+import { Header } from '../Header';
+
 type Props = {
   state: any;
   descriptors: any;
@@ -92,11 +94,11 @@ function NavBarCustom({ state, descriptors, navigation }: Props) {
 function AppNavigation() {
   return (
     <Tab.Navigator tabBar={props => <NavBarCustom {...props} />}>
-      <Tab.Screen options={{ headerShown: false }} name="Home" component={Home} />
-      <Tab.Screen options={{ headerShown: false }} name="Favorites2" component={Game} />
-      <Tab.Screen options={{ headerShown: false }} name="Favorites" component={Favorites} />
-      <Tab.Screen options={{ headerShown: false }} name="Search" component={Games} />
-      <Tab.Screen options={{ headerShown: false }} name="Profile" component={Profile} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Home" component={Home} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Favorites2" component={Game} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Favorites" component={Favorites} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Search" component={Games} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Profile" component={Profile} />
     </Tab.Navigator>
   );
 }

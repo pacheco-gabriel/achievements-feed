@@ -14,7 +14,6 @@ import { styles } from './styles';
 export function Profile(){
   return (
     <View style={styles.container}>
-      <Header />
       <View style={styles.containerIcon}>
         <Text style={styles.title}>Vincular Perfil</Text>
         <View style={styles.iconList}>

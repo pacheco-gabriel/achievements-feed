@@ -12,7 +12,6 @@ import { Game as GameHeader } from '../../components/GameComponents/Game';
 export function Game(){
   return (
     <View style={styles.container}>
-      <Header />
       <ScrollView style={styles.scrollView}>
         <View style={styles.headerGame}>
           <GameHeader title="Dragon Ball Z: Kakarot" button={false} />

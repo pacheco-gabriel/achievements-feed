@@ -10,7 +10,6 @@ import { styles } from './styles';
 export function Games(){
   return (
     <View style={styles.container}>
-      <Header />
     </View>
   );
 }
