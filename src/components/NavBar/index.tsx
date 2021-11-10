@@ -12,7 +12,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home }  from '../../screens/Home';
 import { Games } from '../../screens/Games';
-import { Game } from '../../screens/Game';
+import { GameDetail } from '../../screens/GameDetail';
 import { Favorites } from '../../screens/Favorites';
 import { Profile } from '../../screens/Profile';
 
@@ -73,7 +73,7 @@ function NavBarCustom({ state, descriptors, navigation }: Props) {
           break;
         }
 
-        if(label == 'Game') return (<></>);
+        if(label == 'GameDetail') return (<></>);
         
         return (
           <TouchableOpacity 
@@ -98,7 +98,7 @@ function AppNavigation() {
   return (
     <Tab.Navigator tabBar={props => <NavBarCustom {...props} />}>
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Home" component={Home} />
-      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Game" component={Game} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="GameDetail" component={GameDetail} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Favorites" component={Favorites} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Search" component={Games} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Profile" component={Profile} />

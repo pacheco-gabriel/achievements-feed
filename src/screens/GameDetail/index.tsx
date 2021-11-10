@@ -9,7 +9,7 @@ import { TrophyProgress } from '../../components/GameComponents/TrophyProgress';
 import { CircleProgress } from '../../components/GameComponents/CircleProgress';
 import { Game as GameHeader } from '../../components/GameComponents/Game';
 
-export function Game(){
+export function GameDetail(){
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollView}>

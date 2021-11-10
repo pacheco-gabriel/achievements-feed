@@ -15,8 +15,6 @@ type Props = {
 };
 import { COLORS } from '../../../theme';
 
-import { Game } from '../../../screens/Game';
-
 type PropsButton = {
   screenName: any
 }
@@ -41,7 +39,7 @@ export function GameTitle({title, button = true}: Props){
       <Text style={styles.gameTitle}>{title}</Text>
       {
         button &&
-        <GoToGame screenName="Game" />
+        <GoToGame screenName="GameDetail" />
       }
     </View>
   );
