@@ -72,6 +72,8 @@ function NavBarCustom({ state, descriptors, navigation }: Props) {
             icon = 'home';
           break;
         }
+
+        if(label == 'Game') return (<></>);
         
         return (
           <TouchableOpacity key={index}
@@ -95,7 +97,7 @@ function AppNavigation() {
   return (
     <Tab.Navigator tabBar={props => <NavBarCustom {...props} />}>
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Home" component={Home} />
-      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Favorites2" component={Game} />
+      <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Game" component={Game} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Favorites" component={Favorites} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Search" component={Games} />
       <Tab.Screen options={{ header: props => <Header {...props} /> }} name="Profile" component={Profile} />

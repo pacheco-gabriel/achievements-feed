@@ -4,10 +4,12 @@ import {
   Text,
   View
 } from 'react-native';
-import { Header } from '../../components/Header';
 import { GameList } from '../../components/GameComponents/GameList';
+import { Game} from '../Game';
+
 
 import { styles } from './styles';
+
 
 export function Home(){
   return (

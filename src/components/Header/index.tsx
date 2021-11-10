@@ -12,10 +12,10 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { styles } from './styles';
 
 type Props = {
-  layout: any; 
-  options: any; 
-  route: any;
-  navigation: any; 
+  layout?: any; 
+  options?: any; 
+  route?: any;
+  navigation?: any; 
 }
 
 export function Header({layout,options,route,navigation}:Props){
