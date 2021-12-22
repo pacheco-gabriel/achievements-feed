@@ -1,15 +1,26 @@
 import React from 'react';
 
 import {
-  View
+  View, Text, ScrollView
 } from 'react-native';
-import { Header } from '../../components/Header';
+import { Game } from '../../components/GameComponents/Game';
 
 import { styles } from './styles';
 
 export function Games(){
   return (
     <View style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot"/>
+        <Game title="Dragon Ball Z: Kakarot" />
+        <Game title="Dragon Ball Z: Kakarot"/>
+      </ScrollView>
     </View>
   );
 }
