@@ -4,14 +4,16 @@ import {
   Text,
   View
 } from 'react-native';
-import { NavBar } from '../../components/NavBar';
-import { Header } from '../../components/Header';
+
+
+import { Game } from '../../components/GameComponents/Game';
 
 import { styles } from './styles';
 
 export function Favorites(){
   return (
     <View style={styles.container}>
+      <Game title="Dragon Ball Z: Kakarot"/>
     </View>
   );
 }
